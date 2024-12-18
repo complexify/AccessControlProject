@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-
 <html>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-	<link type="text/css" rel="stylesheet" href="common.css">
-	<script type="text/javascript" src="common.js"></script>
-    <head>
-        <title>
-            Access Control Project
-        </title>
-    </head>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+    <div id="response"></div>
 
-    <body>
-        <div class="content">
-            <input placeholder="username"></input>
-            <input placeholder="password"></input>
-            <button onclick="query()">Query</button>
-            <!-- <p></p>
-            <textarea id="response" rows="20" cols="45" placeholder="Database Results"></textarea> -->
-		</div>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
